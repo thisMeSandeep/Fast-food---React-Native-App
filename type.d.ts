@@ -49,7 +49,7 @@ export interface CartStore {
   getTotalPrice: () => number;
 }
 
-interface TabBarIconProps {
+ interface TabBarIconProps {
   focused: boolean;
   icon: ImageSourcePropType;
   title: string;
