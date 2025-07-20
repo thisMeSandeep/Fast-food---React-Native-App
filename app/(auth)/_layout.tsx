@@ -12,7 +12,7 @@ import { Slot } from "expo-router";
 import { images } from "@/constants";
 
 
-const Layout = () => {
+const AuthLayout = () => {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -43,4 +43,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default AuthLayout;
