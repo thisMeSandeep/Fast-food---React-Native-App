@@ -26,10 +26,10 @@ const Search = () => {
 
   useEffect(() => {
     refetch({ category, query, limit: 6 });
-  }, [category, query]);
+  }, [category, query ]);
 
   return (
-    <SafeAreaView className="bg-white h-full">
+    <SafeAreaView className="h-full bg-white">
       <FlatList
         data={data}
         renderItem={({ item, index }) => {
@@ -51,10 +51,10 @@ const Search = () => {
         columnWrapperClassName="gap-7"
         contentContainerClassName="gap-7 px-5 pb-32"
         ListHeaderComponent={() => (
-          <View className="my-5 gap-5">
-            <View className="flex-between flex-row w-full">
+          <View className="gap-5 my-5">
+            <View className="flex-row w-full flex-between">
               <View className="flex-start">
-                <Text className="small-bold uppercase text-primary">
+                <Text className="uppercase small-bold text-primary">
                   Search
                 </Text>
                 <View className="flex-start flex-row gap-x-1 mt-0.5">

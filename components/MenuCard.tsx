@@ -23,16 +23,16 @@ const MenuCard = ({
     >
       <Image
         source={{ uri: image_url }}
-        className="size-32 absolute -top-10"
+        className="absolute size-32 -top-10"
         resizeMode="contain"
       />
       <Text
-        className="text-center base-bold text-dark-100 mb-2"
+        className="mb-2 text-center base-bold text-dark-100"
         numberOfLines={1}
       >
         {name}
       </Text>
-      <Text className="body-regular text-gray-200 mb-4">From ${price}</Text>
+      <Text className="mb-4 text-gray-200 body-regular">From ${price}</Text>
       <TouchableOpacity
         onPress={() =>
           addItem({
